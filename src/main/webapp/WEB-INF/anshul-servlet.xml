@@ -16,10 +16,6 @@
 		<mvc:annotation-driven></mvc:annotation-driven>
 		
 		<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-		<!-- 	<property name="driverClass" value="org.postgresql.Driver" />
-			<property name="jdbcUrl" value="jdbc:postgresql://tuskpost.cqlmbfhijxwz.us-west-2.rds.amazonaws.com:5432/telusko" />
-			<property name="user" value="navin" />
-			<property name="password" value="12345678" /> -->
 			
 			<property name="driverClass" value="com.mysql.jdbc.Driver" />
 			<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/projectDB" />
