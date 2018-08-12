@@ -1,0 +1,15 @@
+create database projectDB;
+use projectDB;
+create table feedback
+(
+name varchar(30),
+email varchar(30),
+message varchar(1000),
+regarding int,
+code varchar(10),
+rating int
+);
+insert into feedback values('Anshul','anshul7931@gmail.com','Overall nice',1,'0183',5);
+SET SQL_SAFE_UPDATES = 0;
+select * from feedback;
+delete from feedback where 1=1;
